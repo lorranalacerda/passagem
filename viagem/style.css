@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 60px;
+}
+
+h1 {
+    color: #e63946;
+    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    font-weight: 700;
+}
+
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #e63946;
+    border-radius: 12px; 
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+input[type="text"],
+input[type="cpf"],
+input[type="date"],
+input[type="time"],
+select {
+    width: calc(100% - 22px);
+    padding: 12px 16px;
+    border: 1px solid #e63946; 
+    border-radius: 8px; 
+    margin-bottom: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="cpf"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus {
+    border-color: #f1faee; /* Cor da borda ao focar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(229, 57, 53, 0.5); /* Efeito de foco moderno */
+}
+
+.button {
+    background-color: #e63946; /* Vermelho suave */
+    border: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button :hover {
+    background-color: #d62839;
+}
+
+#mensagem {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ffffff; 
+    border: 1px solid #e63946;
+    border-radius: 8px;
+    display: inline-block;
+    color: #333;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* cookies */
+#cookie-msg {
+    width: 80%;
+    position: fixed;
+    bottom: 1%;
+    left: 10%;
+    border-radius: 10px;
+    background-color: #f7a0a1; /* Rosa escuro, mas suave */
+    color: #333; /* Texto escuro para boa legibilidade */
+    padding: 20px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para um toque moderno */
+}
+
+#cookie-msg.mostrar {
+    display: block;
+}
+
+#aceite button {
+    background-color: #f06c6c; /* Rosa escuro para o botão */
+    border: none;
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#aceite button:hover {
+    background-color: #d9534f; /* Rosa mais escuro para hover */
+    color: #ffffff; /* Texto branco para contraste no hover */
+    font-weight: bold;
+}
+
